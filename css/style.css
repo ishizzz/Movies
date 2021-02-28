@@ -1,0 +1,97 @@
+.mov1text{
+   opacity:0;
+   position:absolute;
+   background-color: rgb(131, 236, 240);
+   width: 80%;
+   margin-left: auto;
+   margin-right: auto;
+   top: 0px;
+   bottom: 25%;
+   right: 0px;
+   left: 0px;
+   font-family: Arial, Helvetica, sans-serif;
+   text-align: center;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight:bold;
+    border-radius: 25px;
+    border-width:5px;  
+    border-style:double;
+    font-family: 'Poppins', sans-serif;
+    font-size: 130%;
+    /* transform-style: preserve-3d;
+    transition: all 1s ease-in-out; */
+}
+
+
+
+.pic{
+  width: 80%;
+  height: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  /* opacity: 1; */
+  border-radius:25px;
+}
+
+.entire{
+  background-color:rgb(19, 17, 14);
+}
+
+.heading{
+  color: #7E796A;
+  padding-left: 5%;
+  padding-top: 4%;
+  font-size: 250%;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* .subs{
+  color: #7E796A;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 5%;
+} */
+.page{
+  display:flex;
+  justify-content: space-around;
+  flex-wrap:wrap;
+}
+
+.mov1{
+  flex-basis:65%;
+  position:relative;
+}
+
+@media only screen and (min-width: 600px){
+  .mov1{
+    flex-basis:35%;
+    position:relative;
+  }
+}
+@media only screen and (min-width: 768px){
+  .mov1{
+    flex-basis:27%;
+    position:relative;
+  }
+}
+
+.line{
+    border-top: 1px dotted #8a795a;
+}
+
+.mov1:hover .pic{
+  /* transform: rotateY(180deg); */
+  opacity: 0;
+  transition: ease-in 1s;
+  
+ 
+}
+
+.mov1:hover .mov1text{
+  /* transform: rotateY(180deg); */
+  opacity: 1;
+  transition: background-color 1s ease;
+  
+}
